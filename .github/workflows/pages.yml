@@ -48,7 +48,10 @@ jobs:
                 repo: context.repo.repo,
                 run_id: context.runId
               });
-              if (result.data.artifacts.some(a => a.name === 'github-pages' && !a.expired)) return;
+              if (result.data.artifacts.some(a => a.name === 'github-pages' && !a.expired)) {
+                await new Promise(resolve => setTimeout(resolve, 15000));
+                return;
+              }
               await new Promise(resolve => setTimeout(resolve, 5000));
             }
             core.setFailed('Pages artifact metadata did not become available.');
