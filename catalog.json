@@ -1,0 +1,276 @@
+{
+  "scenes": [
+    {
+      "id": "stairs",
+      "name": "Stairs",
+      "description": "楼梯空间",
+      "sequence": "seq-01",
+      "frames": 500,
+      "stride": 1,
+      "thumbnail": "./assets/stairs-thumb.webp",
+      "videos": [
+        {
+          "id": "stairs-cut3r",
+          "method": "CUT3R",
+          "src": "./media/stairs-cut3r.mp4",
+          "poster": "./assets/stairs-cut3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "stairs-ttt3r",
+          "method": "TTT3R",
+          "src": "./media/stairs-ttt3r.mp4",
+          "poster": "./assets/stairs-ttt3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "stairs-ttsa3r",
+          "method": "TTSA3R",
+          "src": "./media/stairs-ttsa3r.mp4",
+          "poster": "./assets/stairs-ttsa3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        }
+      ]
+    },
+    {
+      "id": "chess",
+      "name": "Chess",
+      "description": "棋盘与桌面",
+      "sequence": "seq-01",
+      "frames": 500,
+      "stride": 2,
+      "thumbnail": "./assets/chess-thumb.webp",
+      "videos": [
+        {
+          "id": "chess-cut3r",
+          "method": "CUT3R",
+          "src": "./media/chess-cut3r.mp4",
+          "poster": "./assets/chess-cut3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "chess-ttt3r",
+          "method": "TTT3R",
+          "src": "./media/chess-ttt3r.mp4",
+          "poster": "./assets/chess-ttt3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "chess-ttsa3r",
+          "method": "TTSA3R",
+          "src": "./media/chess-ttsa3r.mp4",
+          "poster": "./assets/chess-ttsa3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Fire",
+      "description": "灭火器与走廊",
+      "sequence": "seq-01",
+      "frames": 500,
+      "stride": 2,
+      "thumbnail": "./assets/fire-thumb.webp",
+      "videos": [
+        {
+          "id": "fire-cut3r",
+          "method": "CUT3R",
+          "src": "./media/fire-cut3r.mp4",
+          "poster": "./assets/fire-cut3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "fire-ttt3r",
+          "method": "TTT3R",
+          "src": "./media/fire-ttt3r.mp4",
+          "poster": "./assets/fire-ttt3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "fire-ttsa3r",
+          "method": "TTSA3R",
+          "src": "./media/fire-ttsa3r.mp4",
+          "poster": "./assets/fire-ttsa3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        }
+      ]
+    },
+    {
+      "id": "pumpkin",
+      "name": "Pumpkin",
+      "description": "休息区与厨房",
+      "sequence": "seq-01",
+      "frames": 500,
+      "stride": 2,
+      "thumbnail": "./assets/pumpkin-thumb.webp",
+      "videos": [
+        {
+          "id": "pumpkin-cut3r",
+          "method": "CUT3R",
+          "src": "./media/pumpkin-cut3r.mp4",
+          "poster": "./assets/pumpkin-cut3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "pumpkin-ttt3r",
+          "method": "TTT3R",
+          "src": "./media/pumpkin-ttt3r.mp4",
+          "poster": "./assets/pumpkin-ttt3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "pumpkin-ttsa3r",
+          "method": "TTSA3R",
+          "src": "./media/pumpkin-ttsa3r.mp4",
+          "poster": "./assets/pumpkin-ttsa3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        }
+      ]
+    },
+    {
+      "id": "redkitchen",
+      "name": "Red Kitchen",
+      "description": "餐桌与厨房",
+      "sequence": "seq-01",
+      "frames": 500,
+      "stride": 2,
+      "thumbnail": "./assets/redkitchen-thumb.webp",
+      "videos": [
+        {
+          "id": "redkitchen-cut3r",
+          "method": "CUT3R",
+          "src": "./media/redkitchen-cut3r.mp4",
+          "poster": "./assets/redkitchen-cut3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "redkitchen-ttt3r",
+          "method": "TTT3R",
+          "src": "./media/redkitchen-ttt3r.mp4",
+          "poster": "./assets/redkitchen-ttt3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "redkitchen-ttsa3r",
+          "method": "TTSA3R",
+          "src": "./media/redkitchen-ttsa3r.mp4",
+          "poster": "./assets/redkitchen-ttsa3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "name": "Office",
+      "description": "办公空间",
+      "sequence": "seq-01",
+      "frames": 500,
+      "stride": 2,
+      "thumbnail": "./assets/office-thumb.webp",
+      "videos": [
+        {
+          "id": "office-cut3r",
+          "method": "CUT3R",
+          "src": "./media/office-cut3r.mp4",
+          "poster": "./assets/office-cut3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "office-ttt3r",
+          "method": "TTT3R",
+          "src": "./media/office-ttt3r.mp4",
+          "poster": "./assets/office-ttt3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "office-ttsa3r",
+          "method": "TTSA3R",
+          "src": "./media/office-ttsa3r.mp4",
+          "poster": "./assets/office-ttsa3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        }
+      ]
+    },
+    {
+      "id": "heads",
+      "name": "Heads",
+      "description": "桌面与人头模型",
+      "sequence": "seq-01",
+      "frames": 500,
+      "stride": 2,
+      "thumbnail": "./assets/heads-thumb.webp",
+      "videos": [
+        {
+          "id": "heads-cut3r",
+          "method": "CUT3R",
+          "src": "./media/heads-cut3r.mp4",
+          "poster": "./assets/heads-cut3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "heads-ttt3r",
+          "method": "TTT3R",
+          "src": "./media/heads-ttt3r.mp4",
+          "poster": "./assets/heads-ttt3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        },
+        {
+          "id": "heads-ttsa3r",
+          "method": "TTSA3R",
+          "src": "./media/heads-ttsa3r.mp4",
+          "poster": "./assets/heads-ttsa3r-poster.webp",
+          "duration": 35.333333,
+          "width": 2000,
+          "height": 820
+        }
+      ]
+    }
+  ],
+  "methods": [
+    "CUT3R",
+    "TTT3R",
+    "TTSA3R"
+  ],
+  "totalVideos": 21
+}

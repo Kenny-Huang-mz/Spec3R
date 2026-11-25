@@ -1,0 +1,43 @@
+name: Deploy demo to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify static site
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          assert not list(Path('.').rglob('*.pdf')), 'PDF files must not be published'
+          catalog = json.loads(Path('catalog.json').read_text())
+          assert len(catalog['scenes']) == 7 and catalog['totalVideos'] == 21
+          for scene in catalog['scenes']:
+              assert len(scene['videos']) == 3
+              assert Path(scene['thumbnail']).is_file()
+              for video in scene['videos']:
+                  assert Path(video['src']).is_file()
+                  assert Path(video['poster']).is_file()
+          assert 'paper-button' not in Path('index.html').read_text()
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
