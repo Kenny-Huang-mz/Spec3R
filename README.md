@@ -6,11 +6,11 @@ This repository intentionally contains no paper PDF. The Paper button is hidden.
 
 ## GitHub Pages
 
-The repository is currently private. GitHub rejected Pages activation because the current account plan does not support Pages for this private repository. To enable deployment, use an eligible GitHub plan or make the repository public, then select **Settings → Pages → Source → GitHub Actions**. Run the **Deploy demo to GitHub Pages** workflow after enabling Pages.
+Public website: https://kenny-huang-mz.github.io/Spec3R/
 
-Expected project URL after deployment: https://kenny-huang-mz.github.io/demo_test/
+Repository: https://github.com/Kenny-Huang-mz/Spec3R
 
-All assets use relative paths, so the static site also supports a later repository rename to Spec3R. Update the URL here after renaming. Keep repository visibility private until the owner explicitly authorizes changing it.
+The site is deployed through the **Deploy demo to GitHub Pages** workflow on every push to main. All assets use relative paths. The repository was initially tested as demo_test and renamed to Spec3R after its first successful deployment.
 
 ## Local preview
 
