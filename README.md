@@ -29,3 +29,5 @@ All seven scenes and three backbones have synchronized baseline/Ours point-cloud
 Point clouds come directly from the same frame-0-aligned caches as the videos, preserving scale 1.0, original coordinates and RGB. For browser performance, each input frame contributes at most 300 deterministically selected points (150,000 points per panel for current results). No separate per-panel normalization, GT alignment, smoothing, hole filling or color enhancement. Three.js 0.180.0 is vendored locally with its MIT license; no external script CDN is required.
 
 Cloud data: clouds/index.json plus 42 binary files. Binary layout: SPC1 magic, uint32 little-endian point count, float32 XYZ positions, uint8 RGB colors. All three methods remain available as videos above.
+
+场景入口统一为标题信息下方、视频之前的 Explore the Scenes 卡片。该入口同时控制视频和交互点云；两处方法按钮共享选择状态。交互区域不再单独提供场景下拉框，点击顶部卡片后不会强制滚动离开卡片。
