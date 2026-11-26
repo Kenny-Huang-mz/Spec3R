@@ -7,7 +7,7 @@
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<header class="site-header"><a class="brand" href="./" aria-label="Spec3R home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Spec3R</span></a><nav aria-label="Primary"><a href="#visuals">Visuals</a><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#scenes">Scenes</a></nav></header>
+<header class="site-header"><a class="brand" href="./" aria-label="Spec3R home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Spec3R</span></a><nav aria-label="Primary"><a href="#visuals">Visuals</a><a href="#interactive">Interactive</a><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#scenes">Scenes</a></nav></header>
 <main>
 <section class="paper-hero" aria-labelledby="page-title">
 <h1 id="page-title"><span class="title-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>Spec3R:</span><span class="title-description">Training-Free Spectral Rebalancing<br class="wide-break"> for Better Streaming 3D Reconstruction</span></h1>
@@ -27,6 +27,12 @@
 
 <div class="scene-selection" id="scenes"><div class="section-line"><h2>Explore the Scenes</h2><span class="subtle"><span id="scene-count">7</span> scenes · <span id="video-count">21</span> comparisons · 7-Scenes</span></div><div class="scene-grid" id="scene-list" role="group" aria-label="场景选择"></div></div>
 </section>
+<section id="interactive" class="interactive-section" aria-labelledby="interactive-title">
+<h2 id="interactive-title">Interactive Examples</h2><p class="interactive-intro">Explore the reconstruction from any angle. Both views move together.</p>
+<div class="cloud-viewer"><div class="cloud-heading"><div><span class="scene-eyebrow">CURRENT SCENE</span><h3 id="cloud-title">Stairs</h3></div><div class="cloud-selectors"><label class="sr-only" for="cloud-scene">Interactive scene</label><select id="cloud-scene"></select><div id="cloud-methods" class="method-tabs" role="group" aria-label="Interactive reconstruction method"></div></div></div>
+<div id="cloud-stage" class="cloud-stage" aria-busy="true"><span id="cloud-baseline" class="cloud-label cloud-left">CUT3R</span><span id="cloud-ours" class="cloud-label cloud-right">CUT3R + Ours</span><span class="cloud-divider" aria-hidden="true"></span><div id="cloud-status" class="cloud-status" role="status"><span id="cloud-status-text">Loading point clouds…</span><button id="cloud-retry" type="button" hidden>Try again</button></div></div>
+<div class="cloud-toolbar"><p><span>Left drag <strong>Orbit</strong></span><span>Scroll <strong>Zoom</strong></span><span>Right drag <strong>Pan</strong></span></p><button id="cloud-reset" type="button" disabled>Reset view ↺</button></div></div><p id="cloud-detail" class="cloud-detail">500 input frames · Point clouds downsampled for interactive viewing</p><div id="cloud-announcement" class="sr-only" role="status" aria-live="polite"></div>
+</section>
 <section id="abstract" class="paper-section abstract-section" aria-labelledby="abstract-title">
 <h2 id="abstract-title">Abstract</h2>
 <p>Streaming 3D reconstruction compresses long histories into a fixed-size state, while consecutive frames contribute little new content: only a small fraction of each frame’s pixels are observed for the first time. On 7-Scenes, first-observed regions have 1.5× the reconstruction error of repeatedly observed regions. SVD analysis of CUT3R shows that the top 16 write directions carry 81–85% of update energy and align with historical features. Repetition controls support this reading: repeating the same image shrinks the tail share sharply, whereas a dissimilar frame more than doubles the total write norm yet barely lowers the head share. These controls indicate that the head directions mainly consolidate recurring information, whereas middle and tail directions encode observation-specific content but receive little energy. We propose <strong>Spec3R</strong>, a training-free <strong>Spectral Rebalancing</strong> method whose spectral flattening operator preserves update directions while moving singular values toward their mean after the existing gate; the parameter <em>g</em> controls the flattening strength. For CUT3R and TTT3R, adaptive rebalancing reduces 7-Scenes reconstruction error by up to 15% and 16%, and TUM ATE by up to 61% and 56%, respectively, and improves video-depth accuracy. An efficient approximation accelerates the SVD-based operation at inference time.</p>
@@ -40,5 +46,7 @@
 </main>
 <footer class="site-footer"><span>Spec3R · Streaming 3D Reconstruction</span><span>Layout inspired by <a href="https://dongjiacheng06.github.io/MeMix/" target="_blank" rel="noopener noreferrer">MeMix</a>.</span></footer>
 <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
 <script type="module" src="./app.js"></script>
+<script type="module" src="./interactive.js"></script>
 </body></html>

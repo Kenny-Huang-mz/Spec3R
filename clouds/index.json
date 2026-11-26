@@ -1,0 +1,1330 @@
+{
+  "version": 1,
+  "pointCapPerFrame": 300,
+  "coordinatePolicy": "Original predicted geometry, scale 1.0, rigid inverse frame-0 pose alignment. No GT fit, independent normalization, smoothing or color enhancement. Deterministic per-frame subsampling from the video point caches.",
+  "pairs": {
+    "stairs-cut3r": {
+      "baseline": {
+        "src": "./clouds/stairs-cut3r-baseline.bin",
+        "count": 150000,
+        "sha256": "ff714974c755368467f500b09f33a9f6087bda427de9f46523f74a6b2f1684dc"
+      },
+      "ours": {
+        "src": "./clouds/stairs-cut3r-ours.bin",
+        "count": 150000,
+        "sha256": "e8f016c6e06fd9db16d48b59af869a872fc4f5c85ce0a513afee9e01cd080c92"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.8670501112937927,
+          -0.8396072387695312,
+          2.174695134162903
+        ],
+        "distance_m": 9.526290250959187,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1054.511948728087,
+        "projection_center": [
+          0.0581691402214469,
+          -0.03731297528112745
+        ],
+        "clipped_points": {
+          "cut3r": 0,
+          "cut3r_ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "stairs-ttt3r": {
+      "baseline": {
+        "src": "./clouds/stairs-ttt3r-baseline.bin",
+        "count": 150000,
+        "sha256": "112e5d9806eb92da1dfd19d7751bf80a932d019e297dc9a57d5f574eaf78ba96"
+      },
+      "ours": {
+        "src": "./clouds/stairs-ttt3r-ours.bin",
+        "count": 150000,
+        "sha256": "4012aa7b0583134cdc72407e4576adfadec7b5300a288c4f95c07bb69449dc1a"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          1.0384318828582764,
+          -1.1662058234214783,
+          2.5880212783813477
+        ],
+        "distance_m": 10.614550382347012,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 938.8408312567309,
+        "projection_center": [
+          0.02488847426824617,
+          -0.05042304838507028
+        ],
+        "clipped_points": {
+          "native": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "stairs-ttsa3r": {
+      "baseline": {
+        "src": "./clouds/stairs-ttsa3r-baseline.bin",
+        "count": 150000,
+        "sha256": "c08cfac6f182d064d20520a2e0d4af615df174adb6d0ade6385511b6b4d7c937"
+      },
+      "ours": {
+        "src": "./clouds/stairs-ttsa3r-ours.bin",
+        "count": 150000,
+        "sha256": "4ecef17ab2f12bd8a6656d62b62ca5099675b76fd87e79fd524b69944d185868"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.903157114982605,
+          -1.207385540008545,
+          2.5810487270355225
+        ],
+        "distance_m": 10.076779398327211,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 910.6993420686807,
+        "projection_center": [
+          0.02519384110633663,
+          -0.04455902139370352
+        ],
+        "clipped_points": {
+          "baseline": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "chess-cut3r": {
+      "baseline": {
+        "src": "./clouds/chess-cut3r-baseline.bin",
+        "count": 150000,
+        "sha256": "63c823d6f75fc892b6c2fe3e1ace80f2bb9d6a21ec5b5a200de8176c4a96e88d"
+      },
+      "ours": {
+        "src": "./clouds/chess-cut3r-ours.bin",
+        "count": 150000,
+        "sha256": "53787d51d89e115c36d7c0044a493cdfc2d5942adeb6ed4a70aef6706f7f4c84"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.1847468763589859,
+          0.37708327174186707,
+          2.5168261528015137
+        ],
+        "distance_m": 14.785130402278625,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 988.0275424629111,
+        "projection_center": [
+          0.11778281445414393,
+          0.007948727788357424
+        ],
+        "clipped_points": {
+          "cut3r": 0,
+          "cut3r_ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "chess-ttt3r": {
+      "baseline": {
+        "src": "./clouds/chess-ttt3r-baseline.bin",
+        "count": 150000,
+        "sha256": "60e6b6964fe63931b38653fd2e73c8abdf443b4861f930b5ca97a87638809ad4"
+      },
+      "ours": {
+        "src": "./clouds/chess-ttt3r-ours.bin",
+        "count": 150000,
+        "sha256": "da08c1801f8750d6cdadc10c03f068b74691274a1137a3a293f14204741cb2e1"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.17439555376768112,
+          0.5061694979667664,
+          2.9609601497650146
+        ],
+        "distance_m": 13.756055684459982,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1268.8938780431768,
+        "projection_center": [
+          0.08433276131411528,
+          -0.0085880533876352
+        ],
+        "clipped_points": {
+          "native": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "chess-ttsa3r": {
+      "baseline": {
+        "src": "./clouds/chess-ttsa3r-baseline.bin",
+        "count": 150000,
+        "sha256": "89a93decec7c102f6a97e88b4486f61f7e69419f52db151b62c4929ddaa65455"
+      },
+      "ours": {
+        "src": "./clouds/chess-ttsa3r-ours.bin",
+        "count": 150000,
+        "sha256": "5ef245eaeb9219ed5c88f4f3ce7b1213d0c441d463a2e480fed3b082d399337a"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.15024402737617493,
+          0.5110985934734344,
+          2.9650944471359253
+        ],
+        "distance_m": 14.548573338254716,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1257.037031423046,
+        "projection_center": [
+          0.087720340953759,
+          -0.009646064906016341
+        ],
+        "clipped_points": {
+          "baseline": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "fire-cut3r": {
+      "baseline": {
+        "src": "./clouds/fire-cut3r-baseline.bin",
+        "count": 150000,
+        "sha256": "1798ee356a8576042c94cb74e6c845219e42492a37b09eb572346da350855047"
+      },
+      "ours": {
+        "src": "./clouds/fire-cut3r-ours.bin",
+        "count": 150000,
+        "sha256": "42f20e96d52c51f8d31a940a11c718c12f630db46e0e75d92e17bb3345c277ec"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          -0.0783572569489479,
+          -0.062416091561317444,
+          1.6648992896080017
+        ],
+        "distance_m": 14.172378210172385,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1275.8423898298172,
+        "projection_center": [
+          0.08661957734370716,
+          0.007783519888395318
+        ],
+        "clipped_points": {
+          "cut3r": 0,
+          "cut3r_ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "fire-ttt3r": {
+      "baseline": {
+        "src": "./clouds/fire-ttt3r-baseline.bin",
+        "count": 150000,
+        "sha256": "0dc5e8bde9a99f86a2d85d69fc3c3c6c80e54fbee6d7e0e88b8d9893da67c6a9"
+      },
+      "ours": {
+        "src": "./clouds/fire-ttt3r-ours.bin",
+        "count": 150000,
+        "sha256": "90bb6a840f17de63f7686786fdde89479c8868a882d97c539a354dd438c6d4a7"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          -0.10206183418631554,
+          -0.043851323425769806,
+          1.6072848439216614
+        ],
+        "distance_m": 14.11696223184255,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1374.0793174213795,
+        "projection_center": [
+          0.09582180398332535,
+          0.002980633902191221
+        ],
+        "clipped_points": {
+          "native": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "fire-ttsa3r": {
+      "baseline": {
+        "src": "./clouds/fire-ttsa3r-baseline.bin",
+        "count": 150000,
+        "sha256": "563460ea3aa445a7218119be0262fdfb2710149e71b130c192cce555fae51da1"
+      },
+      "ours": {
+        "src": "./clouds/fire-ttsa3r-ours.bin",
+        "count": 150000,
+        "sha256": "20018b134eaa7eca1834ccc6823934bc7b17daeef08bc6c85a77ba646db3af7d"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          -0.10890845954418182,
+          -0.043676892295479774,
+          1.5996586084365845
+        ],
+        "distance_m": 14.237450994192644,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1396.9924454289828,
+        "projection_center": [
+          0.09417899527975325,
+          0.005748287925618281
+        ],
+        "clipped_points": {
+          "baseline": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "pumpkin-cut3r": {
+      "baseline": {
+        "src": "./clouds/pumpkin-cut3r-baseline.bin",
+        "count": 150000,
+        "sha256": "1c05452588ce141fb554b84c556e6edea4ea031814512f484afde30d382e6c0a"
+      },
+      "ours": {
+        "src": "./clouds/pumpkin-cut3r-ours.bin",
+        "count": 150000,
+        "sha256": "a2f3beff43d7a36352fcfe195fee4e929c05fe7fa44150b42d173d1d2f57bb9d"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          -0.2662341892719269,
+          -1.3526976108551025,
+          2.4469902515411377
+        ],
+        "distance_m": 15.215216336447986,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 982.3963390688157,
+        "projection_center": [
+          -0.00444267723021366,
+          0.08738556801149891
+        ],
+        "clipped_points": {
+          "cut3r": 0,
+          "cut3r_ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "pumpkin-ttt3r": {
+      "baseline": {
+        "src": "./clouds/pumpkin-ttt3r-baseline.bin",
+        "count": 150000,
+        "sha256": "26366a6946aa5647f80141fd3d2f99ca94c3f16d7bf3576c877e5ed0d255e533"
+      },
+      "ours": {
+        "src": "./clouds/pumpkin-ttt3r-ours.bin",
+        "count": 150000,
+        "sha256": "b0b2fac54a2542270a1ae16d7dbf0bb12d7da2ad7cef21e329775d813c3658d3"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          -0.5771324038505554,
+          -1.6917436122894287,
+          2.7038604021072388
+        ],
+        "distance_m": 12.94941781653593,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1014.8949320763988,
+        "projection_center": [
+          -0.02961279187491328,
+          0.11155709053425802
+        ],
+        "clipped_points": {
+          "native": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "pumpkin-ttsa3r": {
+      "baseline": {
+        "src": "./clouds/pumpkin-ttsa3r-baseline.bin",
+        "count": 150000,
+        "sha256": "607dbbdb9a2c719c8da0e4122cdfb7fb1014aa2584c37ae6b4efdf65fa3c64d5"
+      },
+      "ours": {
+        "src": "./clouds/pumpkin-ttsa3r-ours.bin",
+        "count": 150000,
+        "sha256": "0603eefc4a0b6c9a5c673a47d954ed20b3418c4cf33a7438bd6e00cc3d1ce826"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          -0.5357139408588409,
+          -1.6145098805427551,
+          2.7115150690078735
+        ],
+        "distance_m": 13.155541512398978,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 1028.8894869972542,
+        "projection_center": [
+          -0.028522066288624054,
+          0.10817046826096659
+        ],
+        "clipped_points": {
+          "baseline": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "redkitchen-cut3r": {
+      "baseline": {
+        "src": "./clouds/redkitchen-cut3r-baseline.bin",
+        "count": 150000,
+        "sha256": "f6585741e4e68bd2f73504fb673f373218097216c4f971f62b07fe445cd66992"
+      },
+      "ours": {
+        "src": "./clouds/redkitchen-cut3r-ours.bin",
+        "count": 150000,
+        "sha256": "1d5979562536f0157dea835a7e082f4a3ed881dad2664156d4f47dddeb22c5bb"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.436723068356514,
+          -0.2668791711330414,
+          2.0735195875167847
+        ],
+        "distance_m": 9.260765413917902,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 764.1866152045093,
+        "projection_center": [
+          0.010210974555255353,
+          -0.03731878655908552
+        ],
+        "clipped_points": {
+          "cut3r": 0,
+          "cut3r_ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "redkitchen-ttt3r": {
+      "baseline": {
+        "src": "./clouds/redkitchen-ttt3r-baseline.bin",
+        "count": 150000,
+        "sha256": "eb8cbc2ec7a35596831f6b97ee003b5d9f920a2ebf68f669d1312138b613de29"
+      },
+      "ours": {
+        "src": "./clouds/redkitchen-ttt3r-ours.bin",
+        "count": 150000,
+        "sha256": "6254713bbf442fdc3c3f7603a0d2b8f905e854e28a9ba5098c58d8e2488a1f3b"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.5445345640182495,
+          -0.29069772362709045,
+          2.2798409461975098
+        ],
+        "distance_m": 9.10207441826991,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 807.6404087504077,
+        "projection_center": [
+          0.004521651525875275,
+          -0.022017150121880713
+        ],
+        "clipped_points": {
+          "native": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "redkitchen-ttsa3r": {
+      "baseline": {
+        "src": "./clouds/redkitchen-ttsa3r-baseline.bin",
+        "count": 150000,
+        "sha256": "a0ab6eba5aad846fc3c8e18d132ffbd27103e6d98d271eae07c59d8009f4d81a"
+      },
+      "ours": {
+        "src": "./clouds/redkitchen-ttsa3r-ours.bin",
+        "count": 150000,
+        "sha256": "a5abbb6fa7e3f312e9fd44796b3be6ea657987b1eaf6405166743c9d90de30b2"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.5191119611263275,
+          -0.25038909912109375,
+          2.233942151069641
+        ],
+        "distance_m": 9.416851198880888,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 829.2764501524357,
+        "projection_center": [
+          0.009477717183318773,
+          -0.02380571062589533
+        ],
+        "clipped_points": {
+          "baseline": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "office-cut3r": {
+      "baseline": {
+        "src": "./clouds/office-cut3r-baseline.bin",
+        "count": 150000,
+        "sha256": "795e28d9d96f4e825547b951fcc69b38351fb9b433ad7a58f805305d7491667d"
+      },
+      "ours": {
+        "src": "./clouds/office-cut3r-ours.bin",
+        "count": 150000,
+        "sha256": "08d7dc15b378ad7aa129766de9b61e3c2e09889dc8e27486aa5b4b93800e4db7"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.142169289290905,
+          0.03229404240846634,
+          2.022946000099182
+        ],
+        "distance_m": 9.954820331698983,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 757.6837841820663,
+        "projection_center": [
+          0.029520797988002057,
+          0.012705967031497761
+        ],
+        "clipped_points": {
+          "cut3r": 0,
+          "cut3r_ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "office-ttt3r": {
+      "baseline": {
+        "src": "./clouds/office-ttt3r-baseline.bin",
+        "count": 150000,
+        "sha256": "174dc896aa1c606c6e5c85aab8902498e6ab4ea6858c84bea2492b8b3221ff97"
+      },
+      "ours": {
+        "src": "./clouds/office-ttt3r-ours.bin",
+        "count": 150000,
+        "sha256": "fa4221a55a25f367947ea79b31e4bf34b3ce0ce9843f357cb6a12d059b4036ca"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.2896807789802551,
+          0.025040083564817905,
+          2.198576807975769
+        ],
+        "distance_m": 9.281043025875427,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 794.3462561624389,
+        "projection_center": [
+          0.021723531381810546,
+          0.04650586611020696
+        ],
+        "clipped_points": {
+          "native": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "office-ttsa3r": {
+      "baseline": {
+        "src": "./clouds/office-ttsa3r-baseline.bin",
+        "count": 150000,
+        "sha256": "10c3d1f81a0e3bdff0f0a11011593d8ee1ca4c439b5dac4dcd6d96269f736c68"
+      },
+      "ours": {
+        "src": "./clouds/office-ttsa3r-ours.bin",
+        "count": 150000,
+        "sha256": "13161de1c7c3ff200db691fde1a2210fe1fd6ae82650f9373398606b9028d670"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.2417590171098709,
+          0.03254600614309311,
+          2.1812530755996704
+        ],
+        "distance_m": 9.269916053770245,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 783.9013596215683,
+        "projection_center": [
+          0.036768609685049164,
+          0.04695359776810176
+        ],
+        "clipped_points": {
+          "baseline": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "heads-cut3r": {
+      "baseline": {
+        "src": "./clouds/heads-cut3r-baseline.bin",
+        "count": 150000,
+        "sha256": "376d681331cd926a8a6f53908586d64e6f60147b1b811c81835c060e0539dbdc"
+      },
+      "ours": {
+        "src": "./clouds/heads-cut3r-ours.bin",
+        "count": 150000,
+        "sha256": "794013de22c63d93d80d441bdcc0b885cf2409a2361ccccdfb6c430f8c113599"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.39211544394493103,
+          0.00315175938885659,
+          0.6550354063510895
+        ],
+        "distance_m": 8.078365108378202,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 734.9095549447793,
+        "projection_center": [
+          0.02453829720730044,
+          0.01346557397045467
+        ],
+        "clipped_points": {
+          "cut3r": 0,
+          "cut3r_ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "heads-ttt3r": {
+      "baseline": {
+        "src": "./clouds/heads-ttt3r-baseline.bin",
+        "count": 150000,
+        "sha256": "5886dcb99821d5c3891970f7eb573786fced6e9e3bba43d7a8078724ab527a30"
+      },
+      "ours": {
+        "src": "./clouds/heads-ttt3r-ours.bin",
+        "count": 150000,
+        "sha256": "f0b701aeef4b14ef983932e17c5d8d1da8d335db830bd69a0cc9c655beb130b7"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.6572659909725189,
+          0.022250098176300526,
+          0.5094717442989349
+        ],
+        "distance_m": 6.534041490626429,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 779.1048797841435,
+        "projection_center": [
+          0.03163090711054958,
+          0.030456987419704165
+        ],
+        "clipped_points": {
+          "native": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    },
+    "heads-ttsa3r": {
+      "baseline": {
+        "src": "./clouds/heads-ttsa3r-baseline.bin",
+        "count": 150000,
+        "sha256": "898d6f2c67444703b7d35dfc6e5d531a4fb213e00a23a50b8a0b8be306d53f6b"
+      },
+      "ours": {
+        "src": "./clouds/heads-ttsa3r-ours.bin",
+        "count": 150000,
+        "sha256": "e7e657c788fd6cef86727647f75f8abb39dbb5d6e67e3a5d8c2f3b4c2ffd6068"
+      },
+      "camera": {
+        "direction": [
+          0.4000988020269483,
+          0.22227711223719349,
+          0.8891084489487739
+        ],
+        "target": [
+          0.6126311123371124,
+          0.05143805034458637,
+          0.5160312652587891
+        ],
+        "distance_m": 6.076241035635689,
+        "basis_rows_right_down_forward": [
+          [
+            0.9119215051751064,
+            0.0,
+            -0.4103646773287979
+          ],
+          [
+            -0.0912146754407929,
+            0.9749835308226975,
+            -0.20269927875731755
+          ],
+          [
+            0.4000988020269483,
+            0.22227711223719349,
+            0.8891084489487739
+          ]
+        ],
+        "projection": "Perspective; identical fixed camera for both methods",
+        "panel_pixels": [
+          700,
+          650
+        ],
+        "framing_percentiles": [
+          0,
+          100
+        ],
+        "framing_padding_percent": 8,
+        "projection_scale": 776.5995224510159,
+        "projection_center": [
+          0.03362973857172377,
+          0.04467422352547212
+        ],
+        "clipped_points": {
+          "baseline": 0,
+          "ns20_adaptive": 0
+        }
+      },
+      "scale": 1.0,
+      "inputFrames": 500
+    }
+  }
+}

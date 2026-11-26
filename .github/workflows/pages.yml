@@ -33,6 +33,16 @@ jobs:
                   assert Path(video['src']).is_file()
                   assert Path(video['poster']).is_file()
           assert 'paper-button' not in Path('index.html').read_text()
+          clouds = json.loads(Path('clouds/index.json').read_text())
+          assert len(clouds['pairs']) == 21
+          for pair in clouds['pairs'].values():
+              assert pair['scale'] == 1.0
+              for side in ['baseline', 'ours']:
+                  payload = Path(pair[side]['src']).read_bytes()
+                  assert payload[:4] == b'SPC1'
+                  assert len(payload) == 8 + pair[side]['count'] * 15
+          assert Path('interactive.js').is_file()
+          assert Path('vendor/THREE-LICENSE.txt').is_file()
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
