@@ -7,7 +7,7 @@ const pairId=()=>`${currentScene.id}-${currentMethod.toLowerCase()}`;
 function showStatus(message,error=false){status.hidden=false;$('cloud-status-text').textContent=message;$('cloud-retry').hidden=!error;stage.setAttribute('aria-busy',String(!error));}
 function choose(sceneId,method){
  currentScene=catalog.scenes.find(s=>s.id===sceneId)||catalog.scenes[0];currentMethod=catalog.methods.includes(method)?method:'CUT3R';
- $('cloud-scene').value=currentScene.id;$('cloud-title').textContent=currentScene.name;$('cloud-baseline').textContent=currentMethod;$('cloud-ours').textContent=`${currentMethod} + Ours`;
+ $('cloud-title').textContent=currentScene.name;$('cloud-baseline').textContent=currentMethod;$('cloud-ours').textContent=`${currentMethod} + Ours`;
  for(const button of $('cloud-methods').children){let selected=button.dataset.method===currentMethod;button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));}
  if(active)loadPair();
 }
@@ -75,8 +75,8 @@ $('cloud-retry').addEventListener('click',()=>{if(!renderer&&THREE){location.rel
 window.addEventListener('comparisonchange',event=>{pendingSelection=new URLSearchParams({scene:event.detail.sceneId,method:event.detail.method});if(catalog)choose(event.detail.sceneId,event.detail.method);});
 try{
  const response=await fetch('./catalog.json');if(!response.ok)throw new Error('Scene catalog unavailable');catalog=await response.json();
- $('cloud-scene').replaceChildren(...catalog.scenes.map(scene=>{const option=document.createElement('option');option.value=scene.id;option.textContent=`${scene.name} · seq-01`;return option;}));
- $('cloud-methods').replaceChildren(...catalog.methods.map(method=>{const button=document.createElement('button');button.type='button';button.className='method-tab';button.dataset.method=method;button.textContent=method;button.addEventListener('click',()=>{choose(currentScene.id,method);history.replaceState(null,'',`?scene=${currentScene.id}&method=${currentMethod}#interactive`);});return button;}));
- $('cloud-scene').addEventListener('change',()=>{choose($('cloud-scene').value,currentMethod);history.replaceState(null,'',`?scene=${currentScene.id}&method=${currentMethod}#interactive`);});choose(pendingSelection.get('scene'),pendingSelection.get('method'));
+
+ $('cloud-methods').replaceChildren(...catalog.methods.map(method=>{const button=document.createElement('button');button.type='button';button.className='method-tab';button.dataset.method=method;button.textContent=method;button.addEventListener('click',()=>{window.dispatchEvent(new CustomEvent('comparisonrequest',{detail:{sceneId:currentScene.id,method}}));});return button;}));
+ choose(pendingSelection.get('scene'),pendingSelection.get('method'));
  const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){active=true;observer.disconnect();loadPair();}},{rootMargin:'150px'});observer.observe(section);
 }catch(error){showStatus('Unable to load the scene list. Please refresh the page.',false);console.error(error);}
