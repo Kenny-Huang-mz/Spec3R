@@ -16,3 +16,6 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}.site-header{max-width:none;
 @media(max-width:640px){.speed-button{min-width:30px;height:26px;font-size:11px;padding:4px}}
 .scene-selection{margin-top:35px}
 @media(max-width:640px){.scene-selection{margin-top:27px}}
+
+.big-play{width:52px;height:52px;padding:0;gap:0;justify-content:center;border-radius:50%}.big-play svg{transform:translateX(1px)}
+@media(max-width:640px){.big-play{width:40px;height:40px;padding:0;gap:0}}
