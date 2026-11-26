@@ -26,3 +26,5 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}.site-header{max-width:none;
 /* One scene picker, above both result viewers. */
 #scenes{margin-top:0;margin-bottom:27px}#scenes .scene-grid{margin-bottom:0}#cloud-methods{margin-top:0}
 @media(max-width:640px){#scenes{margin-bottom:20px}.cloud-selectors{margin-top:12px;width:100%}}
+
+.cloud-status{background:rgba(255,255,255,.78);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#7b8591}
