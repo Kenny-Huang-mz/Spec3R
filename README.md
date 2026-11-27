@@ -31,3 +31,5 @@ Point clouds come directly from the same frame-0-aligned caches as the videos, p
 Cloud data: clouds/index.json plus 42 binary files. Binary layout: SPC1 magic, uint32 little-endian point count, float32 XYZ positions, uint8 RGB colors. All three methods remain available as videos above.
 
 场景入口统一为标题信息下方、视频之前的 Explore the Scenes 卡片。该入口同时控制视频和交互点云；两处方法按钮共享选择状态。交互区域不再单独提供场景下拉框，点击顶部卡片后不会强制滚动离开卡片。
+
+Author affiliations: Haoxiang Zhu — Central South University and AGI Lab, Westlake University; Mingzhen Huang — AGI Lab, Westlake University; Yifu Guo and Zhenning Lu — Sun Yat-sen University; Chi Zhang — AGI Lab, Westlake University. Haoxiang Zhu and Mingzhen Huang share equal contribution; Chi Zhang is the corresponding author.
